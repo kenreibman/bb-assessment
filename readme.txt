@@ -42,4 +42,39 @@ Responsive:
 
 The client is very active in the project and wants a technical breakdown of what you did and how you resolved the missing items. 
 So we need a writing assessment as well as the code above. 
-They also want to know how the design UI/UX and FED code practices could be improved down the road, so please include that as well in your writing. 
+They also want to know how the design UI/UX and FED code practices could be improved down the road, so please include that as well in your writing
+
+
+My changes: 
+
+I first noticed that the normalize is incorrectly displayed on the site because the stylesheet is not properly linked within the relative path.
+
+I also imported the font family Allura and Alex Brush to main.css
+
+I also set variables within the css to make any future changes with font/font-size/color easier.
+
+
+** Adust logo for retina screens
+
+Cart icon was added. Instead of adding pngs, I usually use svgs, as they are easier to work with, and allows customization when it comes to size, color, etc.
+Search icon is not in the images folder.
+Hamburger menu not in the images folder.
+
+Added fontawesome to import icons.
+
+Hamburger menu was given a width and height of 2rem.
+
+Gave header-toggles--mobile styling:
+display: flex;
+
+gave the icons (links) in header-toggles-mobile a:
+display: flex;
+justify-content: center;
+align-items: center;... to have better alignment.
+
+The shopping cart icon was intentially left smaller because the original design looks like it is smaller than the hamburger menu icon.
+
+Added social icons (pngs) to the Follow Us section.
+-removed max-width from .page-footer__column
+
+
