@@ -10,14 +10,14 @@ Support wise they also want to have this page look right in browsers that are ov
 Below are the items we haven't been able to get to yet.
 
 Font:
-  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included
+  - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included (OK)
 
 Site Logos:
   - We need to account for retina screens
 
 Icons:
-  - We haven't been able to add the icons to the setup yet
-  - Hamburger menu, cart, and search icons haven't been added
+  - We haven't been able to add the icons to the setup yet (OK)
+  - Hamburger menu, cart, and search icons haven't been added (OK)
 
 Navigation:
   - We haven't setup functionality for the menu toggle to open up the bottom footer area in small screens
@@ -42,7 +42,7 @@ Responsive:
 
 The client is very active in the project and wants a technical breakdown of what you did and how you resolved the missing items. 
 So we need a writing assessment as well as the code above. 
-They also want to know how the design UI/UX and FED code practices could be improved down the road, so please include that as well in your writing
+They also want to know how the design UI/UX And FED code practices could be improved down the road, so please include that as well in your writing
 
 
 My changes: 
@@ -75,6 +75,27 @@ align-items: center;... to have better alignment.
 The shopping cart icon was intentially left smaller because the original design looks like it is smaller than the hamburger menu icon.
 
 Added social icons (pngs) to the Follow Us section.
--removed max-width from .page-footer__column
 
+Set media queries for slide__content and added the mobile slide content on the index.html for the content to display properly for mobile.
+- aligned text to center for mobile.
 
+Created a mobile navigation menu,
+created a variable for the mobile navigation menu,
+also create a variable for the hamburger menu.
+Added an event listener which toggles the class of 'active' whenever the hamburger menu is clicked.
+
+Also made a class of 'hidden' with the display: none; which hides the slideshow and the "featured" header simultaneously when the hamburger menu is opened.
+
+Added overflow hidden to the page-wrap which solved the issue of horizontal scrolling.
+
+Overflow hidden created a gap between the image and its parent container so I put a width: 100% on the img to take fill the parent content.
+
+Created an accordion for the footer by selecting all expanders and iterating through.
+
+Each expander__toggle (the h2) clicked displays the expander__pannel as block and when the other is clicked, it is hidden.
+
+I had to create second footer nav, adding a modifier --mobile so the accordion doesn't carry into the desktop footer. 
+If any other dev has a better method of doing this.. please let me know. I actually would love to know as it would probably reduce a lot of repetitive HTML and CSS.
+- Added appropriate media queries to hide the mobile footer w/ accordion when it's 64em, and show the desktop footer.
+
+By doing this, I had to hide all page-footer__column classes, but I counteracted that by making a visible class (display: block;) and applying it to all other page-footer__column section that I don't want hidden when switching device viewports... again. If another dev has a better way to control this, please let me know.
