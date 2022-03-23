@@ -29,10 +29,10 @@ Slideshow:
 
 Footer:
   - We got a fair amount of responsive styles done for the site however the footer isn't quite there yet
-  - Social media icons need to be setup so some html changes there to put them in is fine.
-  - Expander accordion Javascript functionality hasn't been setup or styled
-  - Footer bottom area: we unfortunately can't pull the html content out of its location
-     - Can we style up the setup so it matches the desktop and mobile styles
+  - Social media icons need to be setup so some html changes there to put them in is fine. (OK)
+  - Expander accordion Javascript functionality hasn't been setup or styled (OK)
+  - Footer bottom area: we unfortunately can't pull the html content out of its location (OK)
+     - Can we style up the setup so it matches the desktop and mobile styles (OK)
 
 Responsive:
   - For some reason the site isn't switching over to "mobile" styles in devices
@@ -99,3 +99,6 @@ If any other dev has a better method of doing this.. please let me know. I actua
 - Added appropriate media queries to hide the mobile footer w/ accordion when it's 64em, and show the desktop footer.
 
 By doing this, I had to hide all page-footer__column classes, but I counteracted that by making a visible class (display: block;) and applying it to all other page-footer__column section that I don't want hidden when switching device viewports... again. If another dev has a better way to control this, please let me know.
+
+"Shop Crib Bedding" button was misspelled so the mistake was corrected.
+
