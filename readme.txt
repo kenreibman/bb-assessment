@@ -1,3 +1,8 @@
+GITHUB REPOSITORY: https://github.com/kenreibman/bb-assessment
+
+LIVE SITE: https://kenreibman.github.io/bb-assessment/
+
+
 Font:
   - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included (OK)
 
