@@ -1,14 +1,3 @@
-For the skill assessment, we will be testing out your ability to pick up someone else's code and take it to the next level. 
-For the hypothetical situation, a FED has been working on a project but got pulled off so we need your help.
-
-Here's what the FED has to say:
-
-This is where we got to in the cut, but we are having problems and haven't been able to fully test. 
-Can you help us resolve the following issues as well as help catch if we missed something?
-The client is very particular about having fast page speed, good SEO, and wants interesting interactive pieces.
-Support wise they also want to have this page look right in browsers that are over 5% of the browser stats for the US over the past couple of months
-Below are the items we haven't been able to get to yet.
-
 Font:
   - We set up the Allura and Alex Brush font family stacks in the CSS but we don't have the fonts included (OK)
 
