@@ -212,3 +212,5 @@ Optimized SEO by adding:
   - robots
   - language
   - author
+
+  Please look at the pdf and image for Ligthouse performance review!
