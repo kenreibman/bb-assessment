@@ -100,5 +100,26 @@ If any other dev has a better method of doing this.. please let me know. I actua
 
 By doing this, I had to hide all page-footer__column classes, but I counteracted that by making a visible class (display: block;) and applying it to all other page-footer__column section that I don't want hidden when switching device viewports... again. If another dev has a better way to control this, please let me know.
 
+Added background gradient for slide__content in desktop view.
+
 "Shop Crib Bedding" button was misspelled so the mistake was corrected.
 
+For the retina display logo,
+instead of using a div, I changed it to a picture element so it's easier to set breakpoints for the image. I set the retina image breakpoint @ 1024px.
+
+Added alt tags and aria-hidden tags for certain image elements. Alt tags were added for products to better visually describe what they look like for screen readers.
+
+Missing DOCTYPE HTML so I added it to line 1 of the document.
+Added meta tag with viewport
+
+Optimized SEO by adding:
+- meta tags
+  - viewport
+  - title
+  - description
+  - keywords
+  - robots
+  - language
+  - author
+
+I ran out of time to properly style the footer links for mobile.

@@ -376,7 +376,6 @@ body:before {
     position: relative;
     font-size: 18px;
     font-size: calc(var(--fs-lg-mobile) - 1rem);
-    cursor: pointer;
   }
 }
 
@@ -449,10 +448,15 @@ body:before {
       rgba(255, 255, 255, 0) 100%
     );
 }
-
 .footer-top .page-footer__column {
-  max-width: 224px;
+  max-width: 500px;
 }
+@media screen and (min-width: 64em) {
+  .footer-top .page-footer__column {
+    max-width: 224px;
+  }
+}
+
 .page-footer__column h2,
 .page-footer__column .wysiwyg h2 {
   margin-top: 25px;
@@ -477,7 +481,8 @@ body:before {
 
 .expander__toggle--mobile {
   position: relative;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
 }
 .expander__toggle--mobile::after {
   content: '+';
@@ -905,6 +910,7 @@ input[type='password'] {
 .header-navigation--mobile {
   position: relative;
   display: none;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 .active {
@@ -1008,6 +1014,7 @@ input[type='password'] {
 }
 .slide__content--mobile {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .cta:hover,
@@ -1118,6 +1125,7 @@ input[type='password'] {
 .newsletter__form input {
   margin-right: 10px;
   min-width: 0;
+  width: 100%;
 }
 
 /*----- COPYRIGHT -----*/
@@ -1130,7 +1138,7 @@ input[type='password'] {
 
 .copyright img {
   display: inline-block;
-  margin-top: -5px;
+  /* margin-top: -5px; */
   margin-right: 15px;
   vertical-align: middle;
 }
